@@ -23,5 +23,7 @@ RUN apt update && \
 WORKDIR /
 RUN pip3 install runpod
 
+COPY rp_handler.py /rp_hander.py
+
 # Start the container
 CMD [ "python", "-u", "/rp_handler.py" ]
