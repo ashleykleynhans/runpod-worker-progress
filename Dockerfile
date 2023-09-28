@@ -23,6 +23,7 @@ RUN apt update && \
 WORKDIR /
 RUN pip3 install runpod
 
+COPY schemas /schemas
 COPY rp_handler.py /rp_handler.py
 
 # Start the container
