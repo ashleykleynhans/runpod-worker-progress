@@ -19,7 +19,7 @@ def handler(event):
         runpod.serverless.progress_update(event, {
             "progress": f"{update_number}/10"
         })
-        # time.sleep(10)
+        time.sleep(10)
 
 
 if __name__ == '__main__':
