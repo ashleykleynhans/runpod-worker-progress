@@ -21,6 +21,10 @@ def handler(event):
         })
         time.sleep(10)
 
+    return {
+        "result": "Completed"
+    }
+
 
 if __name__ == '__main__':
     logger.info('Starting RunPod Serverless...')
